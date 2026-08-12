@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Restablecer Contraseña - MB</title>
+    <link rel="icon" type="image/x-icon" href="img\logo\MB.ico" />
+</head>
+<body>
+    <div class="caja-login">
+        <h2>Recuperar Contraseña</h2>
+        <form id="form-nueva-pass">
+            <div style="margin-bottom: 15px;">
+                <label>Nueva contraseña:</label>
+                <input type="password" id="nueva-contraseña" 
+            placeholder="escribe tu contraseña" pattern="[A-Za-z0-9@#$%.*!?]{8,16}" oninvalid="this.setCustomValidity('pon tu contraseña, incluye una mayuscula, nùmeros y caracteres especiales y 8 caracteres como minimo')"  oninput="this.setCustomValidity('')" required style="width: 100%; padding: 8px; margin-top: 5px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label>Repetir contraseña:</label>
+                <input type="password" 
+           id="repetir-contraseña" required placeholder="Repite tu nueva contraseña" pattern="[A-Za-z0-9@#$%.*!?]{8,16}"  oninvalid="this.setCustomValidity('pon tu contraseña, incluye una mayuscula, nùmeros y caracteres especiales y 8 caracteres como minimo')"  oninput="this.setCustomValidity('')"required style="width: 100%; padding: 8px; margin-top: 5px;">
+            </div>
+
+            <button type="submit" style="width: 100%; padding: 10px;">Actualizar Contraseña</button>
+        </form>
+         <div class="container-arrow-left">
+                <a href="#" class="link-logo">
+                    <img class="logo-svg" src="img\logo\MangaBeat.jpg" alt="Foto del logo de la marca" style="width: 20%; padding: 10px;">
+                </a>
+            </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="js/mainrecuperar.js"></script>
+</body>
+</html>

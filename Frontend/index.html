@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>MangaBeat</title>
+		<link rel="stylesheet" href="D:\todo\documentos\paginas webs\mangaBeats\Frontend\css/styles.css" />
+		<link rel="icon" type="image/x-icon" href="D:\todo\documentos\paginas webs\mangaBeats\Frontend\img\logo\MB.ico" />
+	</head>
+	<body>
+
+		<section class="main container">
+			<div class="topbar">
+				<div class="container-arrows">
+					<div class="container-arrow-left">
+						
+							<a href="#" class="link-logo">
+								<img class="logo-svg" src="img\logo\MangaBeat.jpg">
+							</a>
+						
+					</div>
+					<div class="container-arrow-right buttons-user">
+						
+					</div>
+				</div>
+				<div class="buttons-user">
+					<a href="D:\todo\documentos\paginas webs\mangaBeats\Frontend\registro.html"  target="_blank" class="btn-register" data-translate="registrarte">Registrarte</a>
+					<a href="D:\todo\documentos\paginas webs\mangaBeats\Frontend\ingreso.html" class="btn-login" target="_blank" data-translate="iniciar_sesion">Iniciar sesión</a>
+				</div>
+			</div>
+
+			<nav class="navbar">
+				<div class="header-container">
+					<div class="boton">
+						<button id="theme-toggle" class="btn-mode" data-translate="cambiar_modo">Cambiar Modo</button>
+						<button id="btn-language" class="btn-language">Español</button>
+					</div>
+					<i class="fa-solid fa-globe"></i>
+				</div>
+
+				<ul class="nav-main">
+					<li>
+						<a href="index.html"> <i class="fa-solid fa-house"></i><span data-translate="inicio">Inicio</span></a>
+					</li>
+									<li>
+					    <a href="#" id="btn-mostrar-buscador">
+					        <i class="fa-solid fa-magnifying-glass"></i><span data-translate="buscar">Buscar</span>
+					    </a>
+					</li>
+
+<!-- Input de búsqueda oculto inicialmente -->
+					<li id="contenedor-buscador" style="display: none; padding: 5px 15px;">
+					    <input type="text" id="input-busqueda" placeholder="" style="width: 100%; padding: 8px; border-radius: 4px; border: none; background: #2a2a2a; color: white;">
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-bookmark"></i><span data-translate="biblioteca">Tu biblioteca</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="extra-options">
+					<button class="btn-create-list" data-translate="crear_lista">
+						<i class="fa-solid fa-plus"></i>
+						Crear Lista
+					</button>
+					<button class="btn-favorite-songs" data-translate="canciones_gustan">
+						<i class="fa-solid fa-heart"></i>
+						Listas creadas
+					</button>
+				</div>
+
+				<div class="container-links">
+					<div class="container-links-legal">
+						<a href="#" data-translate="legal">Legal</a>
+						||<a href="#" data-translate="centro_privacidad">Centro de Privacidad</a>||
+						<a href="#" data-translate="politica_privacidad">Política de Privacidad</a>
+						||<a href="#">Información sobre los anuncios</a>
+					</div>
+				</div>
+			</nav>
+
+			<section class="main-content">
+				<br><br>
+<h2 class="title-playlist" data-translate="seccion_concentracion">Música</h2>
+
+<!--parte principal de la pagina, el section-->
+				<div class="container-name-concentracion">
+
+
+					<div class="container-card-concentracion">
+
+						<div class="card-concentracion">
+   						 
+							<div class="card">
+								<div class="card-img">
+									<img src="img/musica/peacefulpiano.jpg" alt="Peaceful piano" />
+								</div>
+								<h2 data-translate="titulo20">Relájate</h2>
+								<p data-translate="desc_peaceful">Relájate y disfruta con hermosas piezas de piano.</p>
+							</div>
+						</div>
+						<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/musica/workday lounge.jpg" alt="Deep Focus" />
+								</div>
+								<h2 data-translate="titulo30">Enfoque profundo</h2>
+								<p data-translate="desc_deep">Mantén la calma y concéntrate con música ambiental y post-rock.</p>
+							</div>
+						</div>
+						<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/musica/instrumental study.jpg" alt="Instrumental study" />
+								</div>
+								<h2 data-translate="titulo40">Instrumental </h2>
+								<p data-translate="desc_instrumental">Música para estar en un ambiente tranquilo.</p>
+							</div>
+						</div>
+						<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/musica/jazz_ska.jpg" alt="Jazz Vibes" />
+								</div>
+								<h2 data-translate="titulo50">Jazz y ska</h2>
+								<p data-translate="desc_jazz">Escucha las mejores canciones del género.</p>
+							</div>
+						</div>
+						<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/musica/reggaeton.jpg" alt="Focus Flow" />
+								</div>
+
+								<h2 data-translate="titulo60">Regaeton </h2>
+								<p data-translate="desc_reggaeton">los mejores clásicos del reggaeton.</p>
+							</div>
+						</div>
+						<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/musica/coding mode.jpg" alt="Jazz Vibes" />
+								</div >
+								<h2 data-translate="titulo70">Música latina</h2>
+								<p data-translate="desc_latina">las mejores canciones.</p>
+							</div>
+						</div>
+						<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/musica/focus flow.jpg" alt="Focus Flow" />
+									<h2 data-translate="titulo80">Música Clásica</h2>
+									<p data-translate="desc_instrumental">Música para estar en un ambiente tranquilo.</p>
+								</div>
+								
+
+
+						</div>
+					</div>
+					<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/musica/Rock.jpg" alt="Focus Flow" />
+									<h2 data-translate="titulo81">Rock Clásico</h2>
+									<p data-translate="desc_Rock">Música para estar en un ambiente no tranquilo.</p>
+								</div>
+								
+
+
+						</div>
+					</div>
+				</div>
+<!--seccion anime-->
+				<div class="container-name-concentracion">
+
+					<br><br>
+    			<h2 class="title-playlist"  data-translate="seccion_anime">Anime
+    			</h2>
+					<div class="container-card-concentracion">
+						<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/anime/clasico.jpg" alt="Peaceful piano" />
+								</div>
+								<h2 data-translate="titulo4">clásicos</h2>
+								<p data-translate="desc_clasicos">Descubre de lo mas clásico del anime  para recordar para.</p>
+							</div>
+						</div>
+						<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/anime/deep focus.jpg" alt="Deep Focus" />
+								</div>
+								<h2 data-translate="titulo5">Romance</h2>
+								<p data-translate="desc_Romance">Mantén la calma y enterate de los amores en el anime que orece nuestra página.</p>
+							</div>
+						</div>
+						<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/anime/instrumental study.jpg" alt="Instrumental study" />
+								</div>
+								<h2 data-translate="titulo6">Ciencia Ficción.</h2>
+								<p data-translate="desc_Ficcion">Te gusta la ciencia  lo paradigico pero con un toque de fantasía.</p>
+							</div>
+						</div>
+						<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/anime/coding mode.jpg" alt="Jazz Vibes" />
+								</div>
+								<h2 data-translate="titulo7">Terror</h2>
+								<p data-translate="desc_Terror">Te gusta lo espeluznante, lo que causa pavor los mejores animes de terror.</p>
+							</div>
+						</div>
+						<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/anime/focus flow.jpg" alt="Focus Flow" />
+								</div>
+								<h2 data-translate="titulo8">Misterio</h2>
+								<p data-translate="desc_Misterio">Te gusta lo impredecible, lo que no se sabe a simple vista encuentra los mejores animes de comedia.</p>
+							</div>
+						</div>
+						<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/anime/workday lounge.jpg" alt="Workday Lounge" />
+								</div>
+								<h2 data-translate="titulo9">Manga Colombiana</h2>
+								<p data-translate="desc_colombiana">Los mejores mangas Colombianos están aquí, las mejores ediciones de los mangas nacionales estan aquì.</p>
+							</div>
+						</div>
+						<div class="card-concentracion">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/anime/beats to think.jpg" alt="Beats to think to" />
+								</div>
+								<h2 data-translate="titulo10">Comedia</h2>
+								<p data-translate="desc_comedia">Los mangas número 1 de Comedia están aquí, las mejores ediciones de todas las editoriales en español.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+<!--recomendados-->
+				<div class="container-name-spotify-playlists">
+
+					<br><br>
+					<h2 class="title-playlist" data-translate="titulo11">Lista mangaBeats</h2>
+					<div class="container-card-spotify-playlists">
+						<div class="card-spotify-playlists">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/mangaBeat playlists/today top hits.jpg" alt="">
+								</div >
+								<h2 data-translate="titulo12">Los éxitos más populares de hoy</h2>
+								<p data-translate="desc_tophits">¡los 50 mas pegados!</p>
+							</div>
+						</div>
+						<div class="card-spotify-playlists">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/mangaBeat playlists/jap caviar.jpg" alt="RapCaviar" />
+								</div>
+								<h2 data-translate="titulo13">Anime japones</h2>
+								<p data-translate="desc_jap">Si eres amante del anime este este es tu recomendado.</p>
+							</div>
+						</div>
+						<div class="card-spotify-playlists">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/mangaBeat playlists/all out.jpg" alt="All Out 2010s" />
+								</div>
+								<h2 data-translate="titulo14">Lo Mejor del 2010</h2>
+								<p data-translate="desc_allout">Grandes Éxito 2010.</p>
+							</div>
+						</div>
+						<div class="card-spotify-playlists">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/mangaBeat playlists/anime clasico.jpg" alt="Rock Classics" />
+								</div>
+								<h2 data-translate="titulo15">Anime Clásico</h2>
+								<p data-translate="desc_anime">Los clasicos del anime para recordar y disfrutar del mejor anime de antañoS</p>
+							</div>
+						</div>
+						<div class="card-spotify-playlists">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/mangaBeat playlists/chill hits.jpg" alt="Chill Hits" />
+								</div>
+								<h2 data-translate="titulo16">Éxitos Relajantes</h2>
+								<p data-translate="desc_chill">Relájate con los mejores éxitos nuevos y recientes para desconectar.</p>
+							</div>
+						</div>
+						<div class="card-spotify-playlists">
+							<div class="card">
+								<div class="card-img">
+									<img src="img/mangaBeat playlists/viva latino.jpg" alt="Viva Latino" />
+								</div>
+								<h2 data-translate="titulo17">Anime Latino</h2>
+								<p data-translate="desc_latino">Los mejores éxitos del anime, exitos que causan curiosidad recomendados</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<div class="container-links-footer">
+					<div class="links-footer">
+						<h3 data-translate="footer_empresa">Empresa</h3>
+						<a href="#" data-translate="footer_acerca">Acerca de</a>
+						<a href="#" data-translate="footer_empleo">Empleo</a>
+						<a href="#">Deberes y politicas de la empresa</a>
+					</div>
+					<div class="links-footer">
+						<h3 data-translate="footer_comunidades">Comunidades</h3>
+						<a href="#" data-translate="footer_artistas">Para artistas</a>
+						<a href="#" data-translate="footer_desarrolladores">Desarrolladores</a>
+						<a href="#" data-translate="footer_publicidad">Publicidad</a>
+						<a href="#" data-translate="footer_inversores">Inversores</a>
+						<a href="#" data-translate="footer_proveedores">Proveedores</a>
+					</div>
+					<div class="links-footer">
+						<h3 data-translate="footer_enlaces">Enlaces útiles</h3>
+						<a href="#" data-translate="footer_asistencia">Asistencia</a>
+						<a href="#" data-translate="footer_app">App para móvil</a>
+					</div>
+				</div>
+			</footer>
+
+			<div id="main-banner" class="banner-bottom">
+				<button id="close-x" class="close-btn-x">×</button>
+				<div class="content">
+					<span data-translate="banner_titulo">Unete a Nosotros</span>
+					<p data-translate="banner_desc">
+						Regístrate para disfrutar de canciones y anime sin
+						límites, con anuncios ocasionales. No hace falta tarjeta de
+						crédito.
+					</p>
+				</div>
+				<button class="btn-full" data-translate="registrarte"><a href="D:\todo\documentos\paginas webs\mangaBeats\Frontend\registro.html"  target="_blank" >Registrarte</a></button>
+			</div>
+		</section>
+
+		<button id="btn-restore" class="restore-small-btn" title="Ver oferta" data-translate="restaurar">
+			Restaurar
+		</button>
+
+		<script src="D:/todo/documentos/paginas webs/MangaBeats/Frontend/js/main.js"></script>
+	</body>
+</html>

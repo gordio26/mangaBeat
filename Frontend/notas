@@ -1,0 +1,9 @@
+esto es css
+
+
+display: block;
+		width: 140px;
+		background-image: url("D:/todo/documentos/paginas webs/clon-de-spotify-con-HTML-y-CSS-main/img/logo/logo2.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;

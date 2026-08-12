@@ -1,0 +1,74 @@
+﻿# ************************************ #
+# pàgina mangaBeat es una pagina parecida a spotiy 
+disdeñada, creada y puesta en marcha para repasar conceptos con un crud #
+# ************************************ 
+
+
+
+
+
+
+
+
+
+
+#
+descripciòn: Pagina mangaBeats es una app web para leer y escuchar musica pero leer anime y/o manga
+
+
+
+----------------------------------------------
+----------------------------------------------
+----------------------------------------------
+
+
+
+
+
+planeaciòn: Deep Focus
+Descripción: Diseñamos una app web en la cual no solo se pueda escucar musica si no leer anime o manga cuando se quiera .
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+----------------------------------------------
+----------------------------------------------
+----------------------------------------------
+
+
+
+
+
+herramientas:usamos html, css y js. para el frontend
+	
+
+                                    para edl backend 
+                                    para pruebas creamos un servidor local en hicimos pruebas
+				
+
+    para montar en linea usamos vercel y github 
+                                    (no es lo mas seguro pero la idea no es craer una pasarela de pagos en umn entorno tan poco seguro
+                                    es practicar y diseñar y hacer ingenieria)
+                                    
+m
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+----------------------------------------------
+----------------------------------------------
+----------------------------------------------
+
+Desarrollo: aplicamos desarrollo web, diseño web,accebilidad web, diseño de base de datos.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css\styleregistro.css">
+    <link rel="icon" type="image/x-icon" href="img\logo\MB.ico" />
+</head>
+<body>
+    <section>
+        <button type="button" id="btn-ajustes" class="btn-ajustes" data-translate="btn_ajustes">⚙️ Opciones</button>   
+        
+       <header>
+            <div id="caja-idioma-modo" class="btn-mode">
+                <div>
+                <button type="button" id="theme-toggle" class="btn">cambiar de modo</button>
+                <button type="button" id="btn-language" class="btn">Español</button>
+                </div>
+
+                <div class="container-arrow-left">
+                <a href="#" class="link-logo">
+                    <img class="logo-svg" src="img\logo\MangaBeat.jpg" alt="Foto del logo de la marca">
+                </a>
+            </div>
+            </div>
+            
+            
+        </header>
+        <br>
+
+        <div class="form-container">
+           
+            <form class="miFormulario">
+                 <h1 data-translate="titulo">Registro</h1>
+                <div class="input-group">
+                    <label for="nombre" data-translate="lbl_nombre">Nombre</label>
+                    <input type="text" class="nombre" id="nombre" name="nombre" placeholder="Ej. Orion Raigosa" required oninvalid="this.setCustomValidity('pon tu nombre')" oninput="this.setCustomValidity('')">
+                </div>
+
+                <div class="input-group">
+    <label for="correo" data-translate="lbl_correo">Correo Electrónico</label>
+    <input type="email" class="correo" id="correo" name="correo" 
+           placeholder="Ej. usuario@correo.com" 
+           pattern="[a-zA-Z0-9._%+-]{3,}@[a-zA-Z0-9.-]{2,}\.[a-zA-Z]{2,4}"
+           required 
+           oninvalid="if(this.value === '') { this.setCustomValidity('pon tu correo') } else { this.setCustomValidity('Por favor, escribe un correo válido y coherente (Ej: usuario@gmail.com)') }" 
+           oninput="this.setCustomValidity('')">
+</div>
+
+                <div class="input-group">
+                    <label for="contraseña" data-translate="lbl_pass">Contraseña</label>
+                    <input type="password" id="contraseña" pattern="[A-Za-z0-9@#$%.*!?]{8,16}"class="contraseña" name="contraseña" id= "contraseña"placeholder="pon la contraseña"  required  oninvalid="this.setCustomValidity('pon tu contraseña, incluye una mayuscula, nùmeros y caracteres especiales y 8 caracteres como minimo')"  oninput="this.setCustomValidity('')">
+                </div>
+                
+                <div class="input-group">
+                  <label for="repetir_contraseña" data-translate="lbl_rep_pass">Repetir Contraseña</label>
+                    <input type="password" id="repetir_contraseña"pattern="[A-Za-z0-9@#$%.*!?]{8,16}"class="repetir_contraseña"  placeholder="repite la contraseña" name="repetir_contraseña" id="repetir_contraseña" required oninvalid="this.setCustomValidity('repite tu contraseña')" oninput="this.setCustomValidity('')">
+                </div>
+
+                <button type="submit" id="btnEnviar" data-translate="btn_enviar">Enviar</button>
+              
+            </form>
+            <div><p id="mensajeExito" class="hidden" data-translate="mensajeExito">¡GRACIAS POR REGISTRARSE!</p></div>
+        </div>
+    </section>
+    <script src="js\mainregistro.js"></script>
+</body>
+</html>

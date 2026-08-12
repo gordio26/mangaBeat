@@ -1,0 +1,160 @@
+<!--01/08/2026 DESARROLLO Y DISEÑO ORION CARVAJAL-->
+<!--!archivo de pagina de ingreso en html5 -->
+<!--!define lA ESTRUCTURABILIDAD DE LA PAGINA-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="D:\todo\documentos\paginas webs\mangaBeats\Frontend\css/stylesdashboard.css" />
+		<link rel="icon" type="image/x-icon" href="D:\todo\documentos\paginas webs\mangaBeats\Frontend\img\logo\MB.ico" />
+	</head>
+	<body>
+
+		<section class="main container">
+			<div class="topbar">
+				<div class="container-arrows">
+					<div class="container-arrow-left">
+						<i class="fa-solid fa-chevron-left">
+							<a href="#" class="link-logo">
+								<img class="logo-svg" src="img\logo\MangaBeat.jpg">
+							</a>
+						</i>
+					</div>
+					
+					<div class="container-arrow-right buttons-user">
+						<i class="fa-solid fa-chevron-right"></i>
+					</div>
+				</div>
+				<div class="buttons-user">
+					
+				</div>
+			</div>
+
+			<nav class="navbar">
+				<div class="header-container">
+					<div class="boton">
+						<button id="theme-toggle" class="btn-mode" data-translate="cambiar_modo">Cambiar Modo</button>
+						<button id="btn-language" class="btn-language">Español</button>
+					</div>
+					<i class="fa-solid fa-globe"></i>
+				</div>
+
+				<ul class="nav-main">
+					<li>
+						<a href="#"> <i class="fa-solid fa-house"></i><span data-translate="inicio">Inicio</span></a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-magnifying-glass"></i><span data-translate="buscar">Buscar</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-bookmark"></i><span data-translate="biblioteca">Tu biblioteca</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="extra-options">
+					<button class="btn-create-list" data-translate="crear_lista">
+						<i class="fa-solid fa-plus"></i>
+						Crear Lista
+					</button>
+					<button class="btn-favorite-songs" data-translate="canciones_gustan">
+						<i class="fa-solid fa-heart"></i>
+						lo que te gustan
+					</button>
+				</div>
+
+				<div class="container-links">
+					<div class="container-links-legal">
+						<a href="https://www.spotify.com/ec/legal/" data-translate="legal">Legal</a>
+						||<a href="https://www.spotify.com/ec/privacy/" data-translate="centro_privacidad">Centro de Privacidad</a>||
+						<a href="https://www.spotify.com/ec/legal/privacy-policy/" data-translate="politica_privacidad">Política de Privacidad</a>
+						||<a href="https://www.spotify.com/ec/legal/privacy-policy/#s3" data-translate="info_anuncios">Información sobre los anuncios</a>
+					</div>
+				</div>
+			</nav>
+
+			<section class="main-content">
+				<br><br>
+<h1 class="title-playlist" data-translate="seccion_concentracion">Tablero</h1>
+						
+<div class="user-profile-section">
+    <!-- Avatar actual -->
+    <img id="avatar-preview" src="img/logo/MB.ico" alt="Avatar" class="avatar-img">
+    
+     <h3 id="nombre-usuario" class="user-name-display">Cargando usuario...</h3>
+</div>
+<br><br>
+
+<div class="profile-actions">
+        <!-- Botón para subir foto local -->
+        <label for="subir-foto" class="btn-action" data-translate="Subir_foto">📷 Elegir foto</label>
+        <input type="file" id="subir-foto" accept="image/*" style="display: none;">
+
+        <!-- ESPACIO PARA EL NOMBRE DEL USUARIO -->
+   
+        
+        <!-- Botón para abrir selector de avatares de internet/prediseñados -->
+        <button id="btn-abrir-avatares" class="btn-action" data-translate="Elegir_Avatar">✨ Elegir Avatar</button>
+    
+<!-- Modal o galería oculta para elegir avatares predeterminados -->
+<div id="modal-avatares" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h3>Elige tu avatar</h3>
+        <div class="grid-avatares">
+        	
+			  <img
+			  src="https://api.dicebear.com/10.x/toon-head/svg?hairVariant=bun:1&beardVariant=&skinColor=f1c3a5,a36b4f,c68e7a,b98e6a&seed=Felixia" class="avatar-opcion"
+			  alt="avatar" />
+            
+             <!-- Puedes usar URLs directas de internet si prefieres -->
+             <img
+			  src="https://api.dicebear.com/10.x/avataaars/svg?seed=Felix" class="avatar-opcion"
+			  alt="avatar" />
+			  <img
+			  src="https://api.dicebear.com/10.x/lorelei/svg?seed=user-8f3a2c" class="avatar-opcion"
+			  alt="avatar" />
+			  <img src="https://api.dicebear.com/10.x/lorelei/svg" alt="Avatar Robot" class="avatar-opcion">
+            <img src="https://api.dicebear.com/7.x/bottts/svg" alt="Avatar Robot" class="avatar-opcion">
+            <img src="https://api.dicebear.com/10.x/adventurer/svg?seed=Felix" alt="Avatar Robot" class="avatar-opcion">
+            <img
+			 src="https://api.dicebear.com/10.x/toon-head/svg?seed=Manga"
+			  alt="avatar"class="avatar-opcion"/>
+            
+             <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Manga" alt="Avatar Robot" class="avatar-opcion">
+              <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Felix" alt="Avatar Robot" class="avatar-opcion">
+              <img
+			  src="https://api.dicebear.com/10.x/toon-head/svg?seed=Felix"
+			  alt="avatar" class="avatar-opcion" />
+        </div>
+        <button id="cerrar-modal">Cerrar</button>
+    </div>
+</div>
+
+			</section>
+
+			<footer class="footer">
+				<div class="container-links-footer">
+					
+			
+					<div class="links-footer">
+						<h3 data-translate="footer_enlaces">Enlaces útiles</h3>
+						<a href="#" data-translate="footer_asistencia">Asistencia</a>
+						<a href="#" data-translate="footer_app">App para móvil</a>
+					</div>
+				</div>
+			</footer>
+		</section>
+
+
+		<script src="D:/todo/documentos/paginas webs/MangaBeats/Frontend/js/maindashboard.js"></script>
+	</body>
+</html>
