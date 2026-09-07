@@ -1,7 +1,7 @@
 ﻿# ************************************ #
-# pàgina mangaBeat es una pagina parecida a spotiy 
-disdeñada, creada y puesta en marcha para repasar conceptos con un crud #
-# ************************************ 
+# pàgina mangaBeat 
+diseñada, creada y puesta en marcha para repasar conceptos 
+# ************************************ #
 
 
 
